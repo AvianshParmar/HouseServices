@@ -5,10 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="index.css" rel="stylesheet">
     <title>House Services</title>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var header = document.querySelector('.sticky-header');
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 0) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+});
+
+
+</script>
 </head>
 <body>
-    <header>
-         <nav id="main-nav-wrap">
+    <header>	
+         <nav id="main-nav-wrap" class="sticky-header">
             <div class="head-main-div">
                 <div class="logo">
                     <a href="index.html"><b>Handy Helpers</b></a>
@@ -33,9 +48,17 @@
             <div class="container-2">
                 <div class="centered-text">
                     <h1>"Bringing Your Vision to <br>Life:Expert House<br> Servicing, Tailored to <br>Your Home's Every<br> Need."</h1>
-                </div>
+					<button class="btn">GET YOUR SERVICES</button>
+				</div>	
             </div>
         </div>
+	<div class="our-services-div">
+		<div class="head-text-div color-head">
+			<h1>Our Most Popular Services</h1>
+		</div>
+	</div>
+
+
 
 </body>
 </html>
