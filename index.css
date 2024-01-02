@@ -2,8 +2,20 @@
     margin: 0;
     padding: 0;
 }
+.head-color{
+	color: #1d3557;
+}
+.sec-color{
+	color: #457b9d;
+}
+.sec2-color{
+	color: #06d6a0;
+}
+.sec3-color{
+	color: #f1faee;
+}
 body {
-	background-image: url('bg.jpg'); /* Replace 'your_image.jpg' with your image path */
+	background-image: url('image/bg.jpg'); /* Replace 'your_image.jpg' with your image path */
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -21,11 +33,14 @@ ul {
 	overflow: hidden;
   }
 .sticky-header{
-	background-color: #333;
-	transition: background-color 0.3s ease;
+	background-color: #ffffff68;
+	transition: background-color 1s ease;
 }
 .sticky-header.scrolled {
-  background-color: white; /* New background color on scroll */
+  background-color: #f1faee;
+  color: white!important;
+  
+   /* New background color on scroll */
 }
 .main-navigation{
     min-height: 66px;
@@ -96,23 +111,23 @@ ul {
 	line-height: 30px;
 	text-decoration: none;
 	text-align: left;
-	color: #62A4C7;
 	position: relative;
-	-moz-transition: color 0.3s ease-in-out;
-	-o-transition: color 0.3s ease-in-out;
-	-webkit-transition: color 0.3s ease-in-out;
-	-ms-transition: color 0.3s ease-in-out;
-	transition: color 0.3s ease-in-out;
+	-moz-transition: color 0.7 ease-in-out;
+	-o-transition: color 0.7 ease-in-out;
+	-webkit-transition: color 0.7 ease-in-out;
+	-ms-transition: color 0.7 ease-in-out;
+	transition: color 0.7 ease-in-out;
 }
 .main-navigation li a:active {
 	background-color: transparent !important;
 }
 .main-navigation li a:hover {
-	color: #86B6F6;
+	color: #a8dadc;
+	filter: drop-shadow(2px 2px 5px rgba(43, 115, 143, 0.543));
+	transition: 0.7s;
 }
 .logo a{
 	text-decoration: none;
-	color: #306e8f;
 	font-size: 35px;
 	display: block;
     padding: 18px 7px;
@@ -123,7 +138,6 @@ ul {
 .head-main-div{
 	display: flex;
 	justify-content: space-between;
-
 }
 .active{
 	background-color: white;
@@ -150,7 +164,6 @@ ul {
 .centered-text {
 	/* color: #306e8f; */
 	color: #306e8f;
-	opacity: ;
 	font-size: 18px;
 }
 .btn{
@@ -164,22 +177,65 @@ ul {
 	/* box-shadow:5px 5px 5px 2px rgb(0, 0, 0, 0.5); */
 	transition: 1.1s;
 }
-.btn:hover
-{
+.btn:hover{
 	background-color: white;
 	color: #4597cd;
 	transition: 1.1s;
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.5), 0 17px 50px 0 rgba(0,0,0,0.19);
 }	
-.head-text-div
-{
+.head-text-div{
 	text-align:center;
+	padding-top: 30px;
 	
 }
-.our-services-div{
-	margin-top: 20px;
-	height: 100vh;
+.head-text-div h1{
+	/* border:2px solid #06d6a0; */
+	margin: auto;
+	filter: drop-shadow(2px 2px 3px black);
+	border-radius: 10px;
+
 }
-.color-head{
-	color: #306e8f;
+.our-services-div{
+	margin-top: -3px;
+	height: 100vh;
+	background-image: url(image/bg2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100vh;
+	/* background-color: #e63947be; */
+	font-size: 20px;
+}
+.color-div{
+	background-color: #39c3e629;
+	height: 100vh;
+	backdrop-filter: blur(10px);
+}
+.card-main-div{
+	max-width: 300px;
+	min-height: 450px;
+	background-image: url(image/card1.jpg);
+	background-size: cover;
+	margin: 3% auto;
+}
+.card-div{
+	max-width: 300px;
+	min-height: 450px;
+	background-color: rgba(0, 0, 0, 0.091);
+	position: relative;
+}
+.card-text-div{
+	padding: 3%;
+}
+.card-text-div h1{
+	/* color: #1d3557; */
+	filter: drop-shadow(2px 2px 3px black);
+	text-align: center;
+}
+.card-text-div p{
+	color: #e63946;
+	position: absolute;
+	bottom: 0;
+	background-color: #0000003e;
+	text-align: center;
 }
