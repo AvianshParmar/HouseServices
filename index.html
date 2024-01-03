@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var header = document.querySelector('.sticky-header');
   var header2 = document.querySelector('.logo');
   window.addEventListener('scroll', function() {
-    if (window.scrollY > 0) {
+    if (window.scrollY > 50) {
       header.classList.add('scrolled');
       header2.classList.add('header1');
     } else {
@@ -34,11 +34,11 @@ document.addEventListener("DOMContentLoaded", function() {
                  
                        <ul class="main-navigation">
                            <li class="current"><a class="sec-color"  href="#intro" title="">Home</a></li>
-                           <li><a class="sec-color"  href="#process" title="">Services</a></li>
-                           <li><a class="sec-color"  href="#features" title="">Pricing</a></li>
-                           <li><a class="sec-color"  href="#pricing" title="">About Us</a></li>
-                           <li><a class="sec-color"  href="#faq" title="">FAQ</a></li>					
-                           <li ><a class="sec-color" href="#" title="">Sign Up</a></li>					
+                           <li><a class="head-color"  href="#features" title="">Pricing</a></li>
+                           <li><a class="head-color"  href="#process" title="">Services</a></li>
+                           <li><a class="head-color"  href="#pricing" title="">About Us</a></li>
+                           <li><a class="head-color"  href="#faq" title="">FAQ</a></li>					
+                           <li ><a class="head-color" href="#" title="">Sign Up</a></li>					
                        </ul>
                    </nav>
        
@@ -55,22 +55,50 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
         </div>
 	<div class="our-services-div">
+    
     <div class="color-div">
       <div class="head-text-div sec2-color">
         <h1>Our Most Popular Services</h1>
       </div>
-      <div class="card-main-div">
-        <div class="card-div">
-          <div class="card-text-div">
-            <h1 class="sec2-color">Plumbing</h1>
-            <p class="head-color">
-              <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ipsum vitae perferendis dignissimos quia nisi ad delectus repudiandae officiis sapiente nesciunt odio reiciendis ratione ipsam maxime voluptates fugit sequi. Nemo?</b>
-            </p>
+      <div class="flex-box">
+
+        <div class="card-main-div" id="f">
+          <div class="card-div">
+            <div class="card-text-div">
+              <h1 class="sec2-color">Plumbing</h1>
+              <p class="head-color">
+                <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ipsum vitae perferendis dignissimos quia nisi ad delectus repudiandae officiis sapiente nesciunt odio reiciendis ratione ipsam maxime voluptates fugit sequi. Nemo?</b>
+              </p>
+            </div>
           </div>
         </div>
+
+        <div class="card-main-div" id="s">
+          <div class="card-div">
+            <div class="card-text-div">
+              <h1 class="sec2-color">Cleaning</h1>
+              <p class="head-color">
+                <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ipsum vitae perferendis dignissimos quia nisi ad delectus repudiandae officiis sapiente nesciunt odio reiciendis ratione ipsam maxime voluptates fugit sequi. Nemo?</b>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-main-div" id="t">
+          <div class="card-div">
+            <div class="card-text-div">
+              <h1 class="sec2-color">Electrician</h1>
+              <p class="head-color">
+                <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ipsum vitae perferendis dignissimos quia nisi ad delectus repudiandae officiis sapiente nesciunt odio reiciendis ratione ipsam maxime voluptates fugit sequi. Nemo?</b>
+              </p>
+            </div>
+          </div>
+        </div>     
+
       </div>
     </div>
   </div>
+</div>
 
 </body>
 </html>
