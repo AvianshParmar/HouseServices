@@ -24,8 +24,9 @@ hr{
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transition: transform 0.5s;
+    transition: transform 1.5s;
     position: relative;
+    filter: blur(2px);
   }
 
   .flip-card:hover .flip-card-inner {
@@ -41,17 +42,27 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 0px;
+    box-shadow: 3px 3px 6px black;
+ 
   }
 
   .flip-card-front {
     background: url('image/card1.jpg') center/cover;
+    /* filter: blur(5px); */
   }
-
+  .card-div{
+	width: 100%;
+	height: 500px;
+	background-color: #000000a2;
+	position: relative;
+	backdrop-filter: blur(3px);
+}
   .flip-card-back {
     background: rgba(0, 0, 0, 0.301);
     transform: rotateY(180deg);
-    filter: blur(5px);
+    /* filter: blur(5px); */
+    
   }
   .color-blur-div{
     background: rgba(0, 0, 0, 0.301);
@@ -62,7 +73,7 @@ hr{
 	text-align: center;
     position: absolute;
     margin-top: -46px;
-    left: 70px;
+    left: 29%;
     right: auto;
  }
 .card-text-div{
@@ -70,4 +81,9 @@ hr{
     height: 100%;
     text-align: center;
     align-items: center;
+}
+.color-div{
+	background-color: #39c3e629;
+	height: 100vh;
+	backdrop-filter: blur(3px);
 }
