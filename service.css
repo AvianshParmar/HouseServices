@@ -1,6 +1,17 @@
+body{
+  background-repeat: repeat-y;
+  background-image: url()!important;
+  background-color: white !important;
+}
 .head-text-div{
     margin-top: 0%!important;
     padding-top: 6%;
+}
+.our-service-div{
+  height: 200vh!important;
+}
+.color-div{
+  height: 200vh!important;
 }
 hr{
     width: 100%;
@@ -14,7 +25,7 @@ hr{
     margin-top:7px;
 }
 .flip-card {
-    width: 23%;
+    width: 21%;
     height: 400px;
     perspective: 1000px;
     margin: 50px;
@@ -26,7 +37,6 @@ hr{
     transform-style: preserve-3d;
     transition: transform 1.5s;
     position: relative;
-    filter: blur(2px);
   }
 
   .flip-card:hover .flip-card-inner {
@@ -47,9 +57,21 @@ hr{
  
   }
 
-  .flip-card-front {
+ #one{
     background: url('image/card1.jpg') center/cover;
     /* filter: blur(5px); */
+  }
+  #two{
+    background: url('image/card2.jpg') center/cover;
+  }
+  #three{
+    background: url('image/card3.jpg') center/cover;
+  }
+  #four{
+    background: url('image/card3.jpg') center/cover;
+  }
+  #five{
+    background: url('image/card3.jpg') center/cover;
   }
   .card-div{
 	width: 100%;
@@ -64,16 +86,13 @@ hr{
     /* filter: blur(5px); */
     
   }
-  .color-blur-div{
-    background: rgba(0, 0, 0, 0.301);
-  }
   .card-text-div h1{
 	/* color: #1d3557; */
 	filter: drop-shadow(2px 2px black);
 	text-align: center;
     position: absolute;
-    margin-top: -46px;
-    left: 29%;
+    margin-top:  -55px;
+    left: 30%;
     right: auto;
  }
 .card-text-div{
@@ -86,4 +105,44 @@ hr{
 	background-color: #39c3e629;
 	height: 100vh;
 	backdrop-filter: blur(3px);
+}
+.back-text-div{
+  width: 100%;
+  padding: 10px;
+  margin-top: -40px;
+  /* text-align: center; */
+}
+.back-text-div button{
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 2%;
+  margin-left: -2px;
+  margin-right: 0px;
+  width: 95%;
+  background-color: #1d3557;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 22px;
+  padding: 8px 0px;
+  transition: 0.6s;
+}
+.back-text-div button:hover{
+  background-color: #2154a1;
+  font-size: 24px;
+  transition: 0.6s;
+  box-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+.back-text-div h3{
+  font-size: 20px;
+  color: rgb(46, 105, 130)29;
+}
+.back-text-div p{
+  color: black;
+  font-size: 18px;
+}
+.back-text-div img {
+  width: 100%;
+  height: 215px;
+  margin-top: -20px;
 }
