@@ -4,36 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
+    <link href="index.css" rel="stylesheet">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var header = document.querySelector('.sticky-header');
+            var header2 = document.querySelector('.logo');
+            window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+                header2.classList.add('header1');
+            } else {
+                header.classList.remove('scrolled');
+                header2.classList.remove('header1');
+            }
+            });
+        });    
+        </script>
+   <style>
         body {
-			
-
             font-family: Georgia, serif;
-            background-color: #284060;
+
             margin: 0;
             padding: 0;
+            background-image:url("") ;
         }
-
-        header {
-            background-color:  #1d3557;;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
+        .sticky-header{
+            background-color: #ffffff!important;
+            transition: background-color 2s ease;
         }
-
+        .sticky-header.scrolled {
+            background-color: #ccecf8;
+            height: 75px;
+            font: 18px;
+            transition: background-color 2s ease;
+        }
         section {
             max-width: 800px;
             margin: 20px auto;
-            background-color: #fff;
+            background-color: #a5e3ff;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349),5px 5px 10px rgba(0, 0, 0, 0.349);
         }
 		.faq
 		{
 		color: black;
 		}
-		<!-- .button -->
+		/* <!-- .button -->
 		<!-- { -->
 		<!-- margin-top:10px; -->
 	<!-- margin-left:200px; -->
@@ -45,18 +62,17 @@
 <!-- color: black; -->
 <!-- height:35px; -->
 		
-		<!-- } -->
+		<!-- } --> */
 		.custom-button 
 	{ 
 	margin-top:10px;
 	 margin-left:200px;
-	width:80px	
+	width:80px;
       display: inline-block;
       padding: 10px 20px;
       font-size: 16px;
       font-weight: bold;
-      text-align: ce
-	  nter;
+      text-align: center;
       text-decoration: none;
       cursor: pointer;
       border: none;
@@ -81,15 +97,39 @@
             color:black;
 			font-weight:bold;
         }
+        .head-text-div2{
+            text-align: center;
+            padding-top: 6%;
+        }
     </style>
     <title>Housing Service FAQ</title>
 </head>
 
 <body>
-
-    <header>
+    <header>	
+        <nav id="main-nav-wrap" class="sticky-header">
+        <div class="head-main-div">
+            <div class="logo ">
+                <a href="index.html" class="head-color"><b>Handy Helpers</b></a>
+                </div>
+    
+                
+                    <ul class="main-navigation">
+                        <li><a class="head-color"  href="index.html" title="">Home</a></li>
+                        <li><a class="head-color"  href="#features" title="">Pricing</a></li>
+                        <li><a class="head-color"  href="service.html" title="">Services</a></li>
+                        <li><a class="head-color"  href="#pricing" title="">About Us</a></li>
+                        <li><a class="head-color"  href="faq.html" title="">FAQ</a></li>					
+                        <li ><a class="head-color" href="#" title="">Sign Up</a></li>					
+                    </ul>
+                </nav>
+    
+        </div>
+    </nav>
+</header>
+   <div class="head-text-div2">
         <h1>Housing Service FAQ</h1>
-    </header>
+    </div>
 
     <section>
         <div class="faq-item">
