@@ -1,0 +1,307 @@
+
+<html>
+<head>
+<link href="index.css" rel="stylesheet">
+<style>
+	body
+	{
+		background-image: none;
+	}
+img
+{
+width:100%;
+}
+.service
+{
+display:none;
+}
+h1
+{
+font-size:40px;
+margin-top: -84px;
+margin-bottom: 85px;
+}
+.container
+{
+	margin-top: 80px;
+	width:100%;
+	color: #86B6F6;
+	background-color: #e8f2fc;
+	background-image:url('worker.jpg');
+
+}
+p
+{
+margin-bottom:10px;
+font-size:23px;
+color:black;
+}
+p.app
+{
+font-size:20px;
+max-width:80%;
+margin-top:10px;
+color:black;
+}
+select,input
+{
+padding:10px;
+width:300px;
+margin-bottom:10px;
+font-size:20px;
+border:groove;
+border-spacing:10px;
+border-radius:5px;
+
+color:gray;
+}
+table
+{
+margin-left:200px;
+}
+
+.custom-button 
+	{  
+	width:300px;
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      background-color: #3498db;
+      transition: background-color 0.3s;
+    }
+
+    .custom-button:hover {
+      background-color: #2980b8;
+    }
+
+	.container3{
+    max-width: 1250px;
+    margin:auto;    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #ccecf8;
+    padding: 70px;
+	
+}
+.footer-col{
+   width: 25%;
+   padding: 0 -5px;
+   
+}
+.footer-col h4{
+    font-size: 25px;
+    color: #150101;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+	margin-left: 10%;
+	margin-left: -25px;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #060436;
+    text-decoration: none;
+    font-weight: 300;
+    color: #021242;
+    display: block;
+    transition: all 0.3s ease;
+	margin-left: -0px;
+}
+.footer-col ul li a:hover{
+    color: #0f0202;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(216, 142, 142, 0.2);
+    padding: 2px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #9e2d2d;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ce5b5b;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+</style>
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+	  var header = document.querySelector('.sticky-header');
+	  var header2 = document.querySelector('.logo');
+	  window.addEventListener('scroll', function() {
+		if (window.scrollY > 50) {
+		  header.classList.add('scrolled');
+		  header2.classList.add('header1');
+		} else {
+		  header.classList.remove('scrolled');
+		  header2.classList.remove('header1');
+		}
+	  });
+	});
+	
+	
+	</script>
+</head>
+<body>
+	<header>	
+		<nav id="main-nav-wrap" class="sticky-header">
+		   <div class="head-main-div">
+			   <div class="logo ">
+				   <a href="index.html" class="head-color"><b>Handy Helpers</b></a>
+				</div>
+	  
+				
+					  <ul class="main-navigation">
+						  <li><a class="head-color"  href="index.html" title="">Home</a></li>
+						  <li><a class="head-color"  href="#features" title="">Pricing</a></li>
+						  <li><a class="head-color"  href="service.html" title="">Services</a></li>
+						  <li><a class="head-color"  href="#pricing" title="">About Us</a></li>
+						  <li><a class="head-color"  href="faq.html" title="">FAQ</a></li>					
+						  <li ><a class="head-color" href="#" title="">Sign Up</a></li>					
+					  </ul>
+				  </nav>
+	  
+		   </div>
+	   </nav>
+   </header>
+
+<div class='container' >
+<br>
+	<center><h1>Be A Professional with Handy Helpers Services !</h1></center>
+	<form>
+	<table>
+	<tr>
+	<td colspan=2>	<p>Gain access to hundreds of jobs in your city and build your own schedule.</p>
+
+	<tr>
+	<tr class='value'>
+	<td><input type='text' placeholder='First Name'required>
+	<td><input type='text' placeholder='Last Name' required>
+	</tr>
+	
+	<tr class='value'>
+	<td><input type='email' placeholder='Email'required>
+	<td><input type='text' placeholder='ZIP Code' size='6' required>
+	</tr>
+	<tr>
+	<td><select name="opt" id="cars">
+	<option class='service'>Your Primary Services  </option>
+  <option value="plumber">Plumber</option>
+  <option value="cleaner">Cleaner</option>
+  <option value="electrician">Electrician</option>
+  <option value="carpenter">Carpenter</option>
+  <option value="pest control">Pest Control</option>
+
+</select>
+	</tr>
+	<tr>
+	<td><button class="custom-button">Get Started </button>
+	</tr>
+	<tr>
+	<td colspan=2><p class='app'>Already applied ? <a href="#application">Check your application status here.</a><p>
+	<tr>
+	</table>
+	</form>
+	<br><br>
+</div>
+<img src="image/1.png">
+<img src="image/2.png">
+<img src="image/3.png">
+<footer class="footer">
+	<div class="container3">
+	  <div class="row">
+		<div class="footer-col">
+		  <h4>company</h4>
+		  <ul>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Our Services</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Be a Professional</a></li>
+		  </ul>
+		</div>
+		<div class="footer-col">
+		  <h4>get help</h4>
+		  <ul>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">Book Your Slot</a></li>
+			<li><a href="#">order status</a></li>
+			<li><a href="#">payment options</a></li>
+		  </ul>
+		</div>
+		<div class="footer-col">
+		  <h4>Services</h4>
+		  <ul>
+			<li><a href="#">Plumbing</a></li>
+			<li><a href="#">Electrician</a></li>
+			<li><a href="#">Carpenter</a></li>
+			<li><a href="#">Cleaning</a></li>
+			<li><a href="#">Pest Control</a></li>
+		  </ul>
+		</div>
+		<div class="footer-col">
+		  <h4>follow us</h4>
+		  <div class="social-links">
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-linkedin-in"></i></a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </footer>
+  
+  
+</body>
+</html>
