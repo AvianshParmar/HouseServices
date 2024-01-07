@@ -1,6 +1,18 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+	<title>Privacy Policy</title>
+	<script src="https://kit.fontawesome.com/2a66a31b4f.js" crossorigin="anonymous"></script>
 <style>
+	body{
+		background-image: none;
+	}
+.head-main-div{
+	background-color: #86b7f676;
+}
 .heading
 {
 	background-color:#86B6F6;
@@ -17,7 +29,7 @@
 {
     font-family: 'Open Sans', sans-serif;
 	color:#777;
-	margin-top:15px;
+	margin-top:80px;
 	margin-right:18%;
 	margin-left:18%;
 }
@@ -44,11 +56,44 @@ ul
 	margin-left:10%;
 }
 </style>
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+	  var header = document.querySelector('.sticky-header');
+	  var header2 = document.querySelector('.logo');
+	  window.addEventListener('scroll', function() {
+		if (window.scrollY > 50) {
+		  header.classList.add('scrolled');
+		  header2.classList.add('header1');
+		} else {
+		  header.classList.remove('scrolled');
+		  header2.classList.remove('header1');
+		}
+	  });
+	});
+</script>
 </head>
 <body>
-	<div class='heading'>
-<p class='title'>Privacy Policy</p>
-</div>
+		<header>	
+			 <nav id="main-nav-wrap" class="sticky-header">
+				<div class="head-main-div">
+					<div class="logo ">
+						<a href="index.html" class="head-color"><b>Handy Helpers</b></a>
+					 </div>
+						   <ul class="main-navigation">
+							<li><a class="head-color"  href="index.html" title="">Home</a></li>
+							<li><a class="head-color"  href="service.html" title="">Services</a></li>
+							<li><a class="head-color"  href="#pricing" title="">About Us</a></li>
+							<li><a class="head-color"  href="feedback.html" title="">Feedback</a></li>
+							<li><a class="head-color"  href="faq.html" title="">FAQ</a></li>					
+							<li ><a class="head-color" href="#" title="">Sign Up</a></li>						
+						   </ul>
+					   </nav>
+		   
+				</div>
+			</nav>
+		</header>
+<body>
+
 <div class='container1'>
 
 <p class='a1'>Privacy Policy</p>
@@ -88,5 +133,49 @@ ul
 	</div>
 </div>
 <br><br>
+
+<footer class="footer">
+	<div class="container3">
+	  <div class="row">
+		<div class="footer-col">
+		  <h4>company</h4>
+		  <ul>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Our Services</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Be a Professional</a></li>
+		  </ul>
+		</div>
+		<div class="footer-col">
+		  <h4>get help</h4>
+		  <ul>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">Book Your Slot</a></li>
+			<li><a href="#">order status</a></li>
+			<li><a href="#">payment options</a></li>
+		  </ul>
+		</div>
+		<div class="footer-col">
+		  <h4>Services</h4>
+		  <ul>
+			<li><a href="#">Plumbing</a></li>
+			<li><a href="#">Electrician</a></li>
+			<li><a href="#">Carpenter</a></li>
+			<li><a href="#">Cleaning</a></li>
+			<li><a href="#">Pest Control</a></li>
+		  </ul>
+		</div>
+		<div class="footer-col">
+		  <h4>follow us</h4>
+		  <div class="social-links">
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-linkedin-in"></i></a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </footer>
 </body>
 </html>

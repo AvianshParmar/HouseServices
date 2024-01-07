@@ -4,12 +4,14 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="index.css" rel="stylesheet">
-	<title>Be a Professional</title>
+	<title>Book Yout Slot Now</title>
 	<script src="https://kit.fontawesome.com/2a66a31b4f.js" crossorigin="anonymous"></script>
+<head>
+<link href="index.css" rel="stylesheet">
 <style>
 	body
 	{
-		background-image: none;	
+		background-image: none;
 	}
 img
 {
@@ -21,14 +23,15 @@ display:none;
 }
 h1
 {
-font-size:40px;
-margin-top: -84px;
-margin-bottom: 85px;
+font-size:45px;
+margin-top: -104px;
+margin-bottom: 25px;
 }
 .container
 {
 	margin-top: 80px;
 	width:100%;
+    height: 700px;
 	color: #86B6F6;
 	background-color: #e8f2fc;
 	background-image:url('worker.jpg');
@@ -45,18 +48,27 @@ p.app
 font-size:20px;
 max-width:80%;
 margin-top:10px;
+margin-left: 150px;
 color:black;
 }
-select,input
+p.b1
+{
+font-size:15px;
+max-width:80%;
+margin-top:15px;
+margin-left: 169px;
+color:black;
+}
+.a1
 {
 padding:10px;
 width:300px;
 margin-bottom:10px;
 font-size:20px;
 border:groove;
+margin-left: 50PX;
 border-spacing:10px;
 border-radius:5px;
-
 color:gray;
 }
 table
@@ -73,6 +85,7 @@ margin-left:200px;
       font-weight: bold;
       text-align: center;
       text-decoration: none;
+      margin-left: 200PX;
       cursor: pointer;
       border: none;
       border-radius: 5px;
@@ -84,97 +97,20 @@ margin-left:200px;
     .custom-button:hover {
       background-color: #2980b8;
     }
+    
 
-	.container3{
-    max-width: 1250px;
-    margin:auto;    
+.address
+{
+padding:10px;
+width:650px;
+margin-bottom:10px;
+margin-left: 50PX;
+font-size:20px;
+border:groove;
+border-spacing:10px;
+border-radius:5px;
+color:gray;
 }
-.row{
-    display: flex;
-    flex-wrap: wrap;
-}
-ul{
-    list-style: none;
-}
-.footer{
-    background-color: #ccecf8;
-    padding: 70px;
-	
-}
-.footer-col{
-   width: 25%;
-   padding: 0 -5px;
-   
-}
-.footer-col h4{
-    font-size: 25px;
-    color: #150101;
-    text-transform: capitalize;
-    margin-bottom: 35px;
-    font-weight: 500;
-    position: relative;
-	margin-left: 10%;
-	margin-left: -25px;
-}
-.footer-col h4::before{
-    content: '';
-    position: absolute;
-    left:0;
-    bottom: -10px;
-    background-color: #e91e63;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
-
-}
-.footer-col ul li:not(:last-child){
-    margin-bottom: 10px;
-}
-.footer-col ul li a{
-    font-size: 18px;
-    text-transform: capitalize;
-    color: #060436;
-    text-decoration: none;
-    font-weight: 300;
-    color: #021242;
-    display: block;
-    transition: all 0.3s ease;
-	margin-left: -0px;
-}
-.footer-col ul li a:hover{
-    color: #0f0202;
-    padding-left: 8px;
-}
-.footer-col .social-links a{
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(216, 142, 142, 0.2);
-    padding: 2px;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #9e2d2d;
-    transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-    color: #24262b;
-    background-color: #ce5b5b;
-}
-
-/*responsive*/
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
-}
-
 
 
 
@@ -222,46 +158,53 @@ ul{
 
 <div class='container' >
 <br>
-	<center><h1>Be A Professional with Handy Helpers Services !</h1></center>
+	<center><h1>Book Your Slot!</h1></center>
+    
 	<form>
 	<table>
-	<tr>
-	<td colspan=2>	<p>Gain access to hundreds of jobs in your city and build your own schedule.</p>
-
-	<tr>
-	<tr class='value'>
-	<td><input type='text' placeholder='First Name'required>
-	<td><input type='text' placeholder='Last Name' required>
-	</tr>
 	
 	<tr class='value'>
-	<td><input type='email' placeholder='Email'required>
-	<td><input type='text' placeholder='ZIP Code' size='6' required>
+	<td><input type='text' class="a1" placeholder='First Name'required>
+	<td><input type='text' class="a1"placeholder='Last Name' required>
 	</tr>
-	<tr>
-	<td><select name="opt" id="cars">
-	<option class='service'>Your Primary Services  </option>
-  <option value="plumber">Plumber</option>
-  <option value="cleaner">Cleaner</option>
-  <option value="electrician">Electrician</option>
-  <option value="carpenter">Carpenter</option>
-  <option value="pest control">Pest Control</option>
-
+	    
+    <tr  >
+        <td ><input type='number'  class="a1" placeholder='Phone no' required>
+        <td><input type='text' class="a1" placeholder='ZIP Code' size='6' required>
+    </tr>
+    
+	<tr class='value'>
+	<td><input type='email' class="a1" placeholder='Email'required>
+        <td><select name="opt" id="cars" class="a1">
+            <option class='service'>Your Primary Services  </option>
+          <option value="plumber">Plumber</option>
+          <option value="cleaner">Cleaner</option>
+          <option value="electrician">Electrician</option>
+          <option value="carpenter">Carpenter</option>
+          <option value="pest control">Pest Control</option>
+	</tr>
+</table>
+<table>
+    <tr>
+        <td><input type='text' class="address" placeholder='Address' required>
+    </tr>
 </select>
 	</tr>
 	<tr>
-	<td><button class="custom-button">Get Started </button>
+	<td><button class="custom-button">Book Your Slot </button>
 	</tr>
 	<tr>
-	<td colspan=2><p class='app'>Already applied ? <a href="#application">Check your application status here.</a><p>
+	<td colspan=2><p class='app'>Already Booked Your Slot Then ? <a href="#application">Check your status </a><p>
+
+        <p class="b1">* Required Material cost is excluded from charges.</p>
+        <p class="b1">* Material procurement time will be included in service time. </p>
+        <p class="b1">* ₹ 99 will be charged in case of Inspection only.</p>
 	<tr>
 	</table>
-	</form>
+	</form> 
 	<br><br>
 </div>
-<img src="image/1.png">
-<img src="image/2.png">
-<img src="image/3.png">
+
 <footer class="footer">
 	<div class="container3">
 	  <div class="row">
@@ -305,7 +248,6 @@ ul{
 	  </div>
 	</div>
   </footer>
-  
-  
+
 </body>
 </html>
