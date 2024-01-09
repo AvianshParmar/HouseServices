@@ -66,10 +66,10 @@ hr{
     background: url('image/card2.jpg') center/cover;
   }
   #three{
-    background: url('image/card3.jpg') center/cover;
+    background: url('image/card3.avif') center/cover;
   }
   #four{
-    background: url('image/card4.png') center/cover;
+    background: url('image/card4.jpg') center/cover;
   }
   #five{
     background: url('image/card5.jpg') center/cover;
@@ -147,4 +147,10 @@ hr{
   height: 215px;
   margin-top: -20px;
 }
-
+.line-h1{
+    border: 1px solid #1d3557;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 9px;
+    margin-top: 40px;
+}

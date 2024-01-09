@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Login and Registration Form in HTML</title>
+      <link rel="stylesheet" href="login.css">
+      <link rel="stylesheet" href="index.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://kit.fontawesome.com/2a66a31b4f.js" crossorigin="anonymous"></script>
+      <script>
+         document.addEventListener("DOMContentLoaded", function() {
+           var header = document.querySelector('.sticky-header');
+           var header2 = document.querySelector('.logo');
+           window.addEventListener('scroll', function() {
+             if (window.scrollY > 50) {
+               header.classList.add('scrolled');
+               header2.classList.add('header1');
+             } else {
+               header.classList.remove('scrolled');
+               header2.classList.remove('header1');
+             }
+           });
+         });
+         
+         
+         </script>
+         </head>
+         <body>
+             <header>	
+                  <nav id="main-nav-wrap" class="sticky-header">
+                     <div class="head-main-div">
+                        <div class="logo ">
+                           <a href="index.html" class="chng"><img src="image/logo.png" class="logo-img"></a>
+                             <a href="index.html"  class="head-color"><b>Handy</b></a>
+                             <a href="index.html"id="col" class="head-color"><b>Helpers</b></a>
+                          </div>
+                                <ul class="main-navigation">
+                                 <li><a class="head-color"  href="index.html" title="">Home</a></li>
+                                 <li><a class="head-color"  href="service.html" title="">Services</a></li>
+                                 <li><a class="head-color"  href="aboutus.html" title="">About Us</a></li>
+                                 <li><a class="head-color"  href="feedback.html" title="">Feedback</a></li>
+                                 <li><a class="head-color"  href="faq.html" title="">FAQ</a></li>					
+                                 <li ><a class="head-color" href="login.html" title="">Sign Up</a></li>						
+                                </ul>
+                            </nav>
+                
+                     </div>
+                 </nav>
+             </header>
+      <div class="main-div">
+      <div class="wrapper">
+         <div class="title-text">
+            <div class="title login">
+               Login Form
+            </div>
+            <div class="title signup">
+               Signup Form
+            </div>
+         </div>
+         <div class="form-container">
+            <div class="slide-controls">
+               <input type="radio" name="slide" id="login" checked>
+               <input type="radio" name="slide" id="signup">
+               <label for="login" class="slide login">Login</label>
+               <label for="signup" class="slide signup">Signup</label>
+               <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+               <form action="#" class="login">
+                  <div class="field">
+                     <input type="text" placeholder="Email Address" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Password" required>
+                  </div>
+                  <div class="pass-link">
+                     <a href="#">Forgot password?</a>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Login">
+                  </div>
+                  <div class="signup-link">
+                    <b> Not a member?</b> <a href="">Signup now</a>
+                  </div>
+               </form>
+               <form action="#" class="signup">
+                  <div class="field">
+                     <input type="text" placeholder="Email Address" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Password" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Confirm password" required>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer">
+                     <input class="btn-btn" type="submit" value="Signup">
+                  </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+</div>
+
+
+<footer class="footer">
+   <div class="container3">
+     <div class="row">
+       <div class="footer-col">
+         <h4>company</h4>
+         <ul>
+           <li><a href="aboutus.html">About Us</a></li>
+           <li><a href="service.html">Our Services</a></li>
+           <li><a href="privacy.html">Privacy Policy</a></li>
+           <li><a href="pro.html">Be a Professional</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>get help</h4>
+         <ul>
+           <li><a href="faq.html">FAQ</a></li>
+           <li><a href="slot.html">Book Your Slot</a></li>
+           <li><a href="#">order status</a></li>
+           <li><a href="#">payment options</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Services</h4>
+         <ul>
+           <li><a href="service.html">Plumbing</a></li>
+           <li><a href="service.html">Electrician</a></li>
+           <li><a href="service.html">Carpenter</a></li>
+           <li><a href="service.html">Cleaning</a></li>
+           <li><a href="service.html">Pest Control</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>follow us</h4>
+         <div class="social-links">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+           <a href="#"><i class="fab fa-twitter"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </footer>
+
+      <script>
+         const loginText = document.querySelector(".title-text .login");
+         const loginForm = document.querySelector("form.login");
+         const loginBtn = document.querySelector("label.login");
+         const signupBtn = document.querySelector("label.signup");
+         const signupLink = document.querySelector("form .signup-link a");
+         signupBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "-50%";
+           loginText.style.marginLeft = "-50%";
+         });
+         loginBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "0%";
+           loginText.style.marginLeft = "0%";
+         });
+         signupLink.onclick = (()=>{
+           signupBtn.click();
+           return false;
+         });
+      </script>
+      
+      
+   </body>
+</html>
+
