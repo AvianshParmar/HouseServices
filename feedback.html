@@ -40,8 +40,11 @@
             margin-bottom: 8px;
             color: #555;
         }
-
-        input, textarea {
+.none
+		{
+		display:none;
+		}
+        .select,input, textarea {
             width: 100%;
             padding: 8px;
             margin-bottom: 16px;
@@ -127,7 +130,7 @@
 
          <label for="service">Service Received:</label>
         <select id="service" name="service" required>
-            <option value="" disabled selected>Select a service</option>
+            <option class="none"disabled selected>Select a service</option>
             <option value="plumbing">Plumbing</option>
             <option value="electrician">Electrician</option>
             <option value="cleaning">Cleaning</option>
